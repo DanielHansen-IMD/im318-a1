@@ -3,13 +3,19 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>11ty test</title>
+     <title>{{ title }} - Dan's Hobbies</title>
      <link rel="stylesheet" href="../css/style.css">   
 </head>
-<body>
+<body class=" {{ pageClass }}">
      <header>
           {% include 'nav.html' %}
      </header>
-     {{ content | safe }}
+     <div class="hero">
+          <h1>{{ title }}</h1>
+     </div>
+     <div class="wrapper">
+          {{ content | safe }}
+     </div>
+     <script src="../js/script.js"></script>
 </body>
 </html>

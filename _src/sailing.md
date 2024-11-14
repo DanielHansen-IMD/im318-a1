@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
+title: Sailing
+pageClass: sailing
 ---
-# Sailing
 
 Sailing is a summer activity of mine.
